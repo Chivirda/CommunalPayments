@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProgramLogic.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace ProgramUI
 {
     public partial class Main : Form
     {
+        CPContext db;
+
         public Main()
         {
             InitializeComponent();
+            db = new CPContext();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace ProgramLogic.Model
 {
-    class CPContext : DbContext
+    public class CPContext : DbContext
     {
         public CPContext() : base("DBConnection") { }
 
