@@ -175,6 +175,7 @@
             this.addHouseButton.TabIndex = 10;
             this.addHouseButton.Text = "+";
             this.addHouseButton.UseVisualStyleBackColor = true;
+            this.addHouseButton.Click += new System.EventHandler(this.addHouseButton_Click);
             // 
             // addRoomButton
             // 

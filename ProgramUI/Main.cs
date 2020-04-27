@@ -30,5 +30,11 @@ namespace ProgramUI
         {
 
         }
+
+        private void addHouseButton_Click(object sender, EventArgs e)
+        {
+            AddHouse addHouse = new AddHouse();
+            addHouse.Show();
+        }
     }
 }
