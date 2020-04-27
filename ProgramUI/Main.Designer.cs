@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.labelHouse = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.listHouses = new System.Windows.Forms.ComboBox();
             this.houseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelRoom = new System.Windows.Forms.Label();
             this.labelRate = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.roomBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.rateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBoxResult = new System.Windows.Forms.RichTextBox();
@@ -60,17 +60,16 @@
             this.labelHouse.TabIndex = 0;
             this.labelHouse.Text = "Дом";
             // 
-            // comboBox1
+            // listHouses
             // 
-            this.comboBox1.DataSource = this.houseBindingSource;
-            this.comboBox1.DisplayMember = "Name";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(95, 22);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.ValueMember = "Name";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.listHouses.DataSource = this.houseBindingSource;
+            this.listHouses.DisplayMember = "Name";
+            this.listHouses.FormattingEnabled = true;
+            this.listHouses.Location = new System.Drawing.Point(95, 22);
+            this.listHouses.Name = "listHouses";
+            this.listHouses.Size = new System.Drawing.Size(121, 21);
+            this.listHouses.TabIndex = 1;
+            this.listHouses.ValueMember = "Name";
             // 
             // houseBindingSource
             // 
@@ -107,6 +106,10 @@
             this.comboBox2.TabIndex = 4;
             this.comboBox2.ValueMember = "Name";
             // 
+            // roomBindingSource
+            // 
+            this.roomBindingSource.DataSource = typeof(ProgramLogic.Model.Room);
+            // 
             // comboBox3
             // 
             this.comboBox3.DataSource = this.rateBindingSource;
@@ -117,10 +120,6 @@
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 5;
             this.comboBox3.ValueMember = "Value";
-            // 
-            // roomBindingSource
-            // 
-            this.roomBindingSource.DataSource = typeof(ProgramLogic.Model.Room);
             // 
             // rateBindingSource
             // 
@@ -175,7 +174,7 @@
             this.addHouseButton.TabIndex = 10;
             this.addHouseButton.Text = "+";
             this.addHouseButton.UseVisualStyleBackColor = true;
-            this.addHouseButton.Click += new System.EventHandler(this.addHouseButton_Click);
+            this.addHouseButton.Click += new System.EventHandler(this.AddHouseButton_Click);
             // 
             // addRoomButton
             // 
@@ -213,7 +212,7 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.labelRate);
             this.Controls.Add(this.labelRoom);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.listHouses);
             this.Controls.Add(this.labelHouse);
             this.MinimumSize = new System.Drawing.Size(700, 400);
             this.Name = "Main";
@@ -230,7 +229,7 @@
         #endregion
 
         private System.Windows.Forms.Label labelHouse;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox listHouses;
         private System.Windows.Forms.BindingSource houseBindingSource;
         private System.Windows.Forms.Label labelRoom;
         private System.Windows.Forms.Label labelRate;

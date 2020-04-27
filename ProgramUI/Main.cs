@@ -23,18 +23,17 @@ namespace ProgramUI
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addHouseButton_Click(object sender, EventArgs e)
+        private void AddHouseButton_Click(object sender, EventArgs e)
         {
             AddHouse addHouse = new AddHouse();
-            addHouse.Show();
+            if (addHouse.ShowDialog() == DialogResult.OK)
+            {
+                db.Houses.Add(addHouse.House);
+                db.SaveChanges();
+            }
         }
     }
 }
