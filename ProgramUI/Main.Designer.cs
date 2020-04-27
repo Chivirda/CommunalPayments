@@ -42,6 +42,9 @@
             this.richTextBoxResult = new System.Windows.Forms.RichTextBox();
             this.startDatePicker = new System.Windows.Forms.DateTimePicker();
             this.endDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.addHouseButton = new System.Windows.Forms.Button();
+            this.addRoomButton = new System.Windows.Forms.Button();
+            this.addRateButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.houseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rateBindingSource)).BeginInit();
@@ -62,7 +65,7 @@
             this.comboBox1.DataSource = this.houseBindingSource;
             this.comboBox1.DisplayMember = "Name";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(125, 22);
+            this.comboBox1.Location = new System.Drawing.Point(95, 22);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
@@ -98,7 +101,7 @@
             this.comboBox2.DataSource = this.roomBindingSource;
             this.comboBox2.DisplayMember = "Name";
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(125, 66);
+            this.comboBox2.Location = new System.Drawing.Point(95, 66);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 4;
@@ -109,7 +112,7 @@
             this.comboBox3.DataSource = this.rateBindingSource;
             this.comboBox3.DisplayMember = "Value";
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(125, 110);
+            this.comboBox3.Location = new System.Drawing.Point(95, 110);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 5;
@@ -163,11 +166,44 @@
             this.endDatePicker.TabIndex = 9;
             this.endDatePicker.Value = new System.DateTime(2020, 4, 27, 21, 14, 13, 0);
             // 
+            // addHouseButton
+            // 
+            this.addHouseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addHouseButton.Location = new System.Drawing.Point(231, 20);
+            this.addHouseButton.Name = "addHouseButton";
+            this.addHouseButton.Size = new System.Drawing.Size(39, 23);
+            this.addHouseButton.TabIndex = 10;
+            this.addHouseButton.Text = "+";
+            this.addHouseButton.UseVisualStyleBackColor = true;
+            // 
+            // addRoomButton
+            // 
+            this.addRoomButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addRoomButton.Location = new System.Drawing.Point(231, 66);
+            this.addRoomButton.Name = "addRoomButton";
+            this.addRoomButton.Size = new System.Drawing.Size(39, 23);
+            this.addRoomButton.TabIndex = 10;
+            this.addRoomButton.Text = "+";
+            this.addRoomButton.UseVisualStyleBackColor = true;
+            // 
+            // addRateButton
+            // 
+            this.addRateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addRateButton.Location = new System.Drawing.Point(231, 110);
+            this.addRateButton.Name = "addRateButton";
+            this.addRateButton.Size = new System.Drawing.Size(39, 23);
+            this.addRateButton.TabIndex = 10;
+            this.addRateButton.Text = "+";
+            this.addRateButton.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 361);
+            this.Controls.Add(this.addRateButton);
+            this.Controls.Add(this.addRoomButton);
+            this.Controls.Add(this.addHouseButton);
             this.Controls.Add(this.endDatePicker);
             this.Controls.Add(this.startDatePicker);
             this.Controls.Add(this.richTextBoxResult);
@@ -205,6 +241,9 @@
         private System.Windows.Forms.RichTextBox richTextBoxResult;
         private System.Windows.Forms.DateTimePicker startDatePicker;
         private System.Windows.Forms.DateTimePicker endDatePicker;
+        private System.Windows.Forms.Button addHouseButton;
+        private System.Windows.Forms.Button addRoomButton;
+        private System.Windows.Forms.Button addRateButton;
     }
 }
 
