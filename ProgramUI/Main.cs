@@ -23,7 +23,8 @@ namespace ProgramUI
 
         private void Main_Load(object sender, EventArgs e)
         {
-            
+            startDatePicker.Value = DateTime.Now.Date.AddDays(-(DateTime.Now.Day) + 1);
+            endDatePicker.Value = DateTime.Now;
         }
 
         private void AddHouseButton_Click(object sender, EventArgs e)

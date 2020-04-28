@@ -26,7 +26,7 @@ namespace ProgramUI
 
         }
 
-        private void addHouseButton_Click(object sender, EventArgs e)
+        private void AddHouseButton_Click(object sender, EventArgs e)
         {
             if (textBoxName.Text != "")
             {
@@ -40,6 +40,7 @@ namespace ProgramUI
             else
             {
                 errorLabel.Visible = true;
+                this.DialogResult = 0;
             }
         }
     }

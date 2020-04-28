@@ -62,6 +62,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ProgramLogic.Model.CPContext.datasource" />
+    <None Include="Properties\DataSources\ProgramLogic.Model.House.datasource" />
+    <None Include="Properties\DataSources\ProgramLogic.Model.Rate.datasource" />
+    <None Include="Properties\DataSources\ProgramLogic.Model.Result.datasource" />
+    <None Include="Properties\DataSources\ProgramLogic.Model.Room.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
