@@ -104,7 +104,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 4;
-            this.comboBox2.ValueMember = "Name";
+            this.comboBox2.ValueMember = "Id";
             // 
             // roomBindingSource
             // 
