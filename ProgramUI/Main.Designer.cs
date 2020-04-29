@@ -69,7 +69,7 @@
             this.listHouses.Name = "listHouses";
             this.listHouses.Size = new System.Drawing.Size(121, 21);
             this.listHouses.TabIndex = 1;
-            this.listHouses.ValueMember = "Name";
+            this.listHouses.ValueMember = "Id";
             // 
             // houseBindingSource
             // 
