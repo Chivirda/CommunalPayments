@@ -19,6 +19,11 @@ namespace ProgramUI
         {
             InitializeComponent();
             db = new CPContext();
+
+            listHouses.DataSource = db.Houses.ToList();
+            listHouses.DisplayMember = "Name";
+            listHouses.ValueMember = "Id";
+
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -34,6 +39,15 @@ namespace ProgramUI
             {
                 db.Houses.Add(addHouse.House);
                 db.SaveChanges();
+            }
+        }
+
+        private void CalculateButton_Click(object sender, EventArgs e)
+        {
+            var HouseNames = db.Houses.Where(house => house.Name != null);
+            foreach (var name in HouseNames)
+            {
+                richTextBoxResult.Text += $"Дом{name.Id}: {name.Name}\n";
             }
         }
     }
