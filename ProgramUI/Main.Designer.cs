@@ -43,7 +43,7 @@
             this.startDatePicker = new System.Windows.Forms.DateTimePicker();
             this.endDatePicker = new System.Windows.Forms.DateTimePicker();
             this.addHouseButton = new System.Windows.Forms.Button();
-            this.addRoomButton = new System.Windows.Forms.Button();
+            this.AddRoomButton = new System.Windows.Forms.Button();
             this.addRateButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.houseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
@@ -178,15 +178,16 @@
             this.addHouseButton.UseVisualStyleBackColor = true;
             this.addHouseButton.Click += new System.EventHandler(this.AddHouseButton_Click);
             // 
-            // addRoomButton
+            // AddRoomButton
             // 
-            this.addRoomButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addRoomButton.Location = new System.Drawing.Point(231, 66);
-            this.addRoomButton.Name = "addRoomButton";
-            this.addRoomButton.Size = new System.Drawing.Size(39, 23);
-            this.addRoomButton.TabIndex = 10;
-            this.addRoomButton.Text = "+";
-            this.addRoomButton.UseVisualStyleBackColor = true;
+            this.AddRoomButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AddRoomButton.Location = new System.Drawing.Point(231, 66);
+            this.AddRoomButton.Name = "AddRoomButton";
+            this.AddRoomButton.Size = new System.Drawing.Size(39, 23);
+            this.AddRoomButton.TabIndex = 10;
+            this.AddRoomButton.Text = "+";
+            this.AddRoomButton.UseVisualStyleBackColor = true;
+            this.AddRoomButton.Click += new System.EventHandler(this.AddRoomButton_Click);
             // 
             // addRateButton
             // 
@@ -204,7 +205,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 361);
             this.Controls.Add(this.addRateButton);
-            this.Controls.Add(this.addRoomButton);
+            this.Controls.Add(this.AddRoomButton);
             this.Controls.Add(this.addHouseButton);
             this.Controls.Add(this.endDatePicker);
             this.Controls.Add(this.startDatePicker);
@@ -244,7 +245,7 @@
         private System.Windows.Forms.DateTimePicker startDatePicker;
         private System.Windows.Forms.DateTimePicker endDatePicker;
         private System.Windows.Forms.Button addHouseButton;
-        private System.Windows.Forms.Button addRoomButton;
+        private System.Windows.Forms.Button AddRoomButton;
         private System.Windows.Forms.Button addRateButton;
     }
 }
